@@ -1,0 +1,12 @@
+{
+  "wallet": 8900,
+  "transactions": [
+    {
+      "category": "rent",
+      "date": "2022-11-12",
+      "amount": "1000",
+      "typeOfExpense": "Necessary",
+      "note": "rentww"
+    }
+  ]
+}

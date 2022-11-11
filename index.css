@@ -1,0 +1,427 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+.add-budget-button {
+  position: relative;
+  top: -25px;
+}
+#add-category-btn {
+  background-color: #4caf50;
+  border-color: #45a049;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  height: 30px;
+  width: 70px;
+}
+.add-transaction {
+  display: block;
+}
+.add-transaction-button,
+.month-summary-btn {
+  position: relative;
+  top: -25px;
+}
+#category,
+#edit-category {
+  border-radius: 1em;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 8px 0;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.close-button {
+  background-color: lightgray;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  float: right;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 1.5rem;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.display-month-summary {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  overflow: auto;
+  row-gap: 5%;
+  width: 100%;
+}
+.display-month-summary > progress {
+  height: 20px;
+  width: 170px;
+}
+.display-wallet-amount {
+  column-gap: 3%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.edit-close-button {
+  background-color: lightgray;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  float: right;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 1.5rem;
+}
+
+.edit-close-button:hover {
+  background-color: darkgray;
+}
+.edit-icon {
+  height: 25px;
+  width: 27px;
+}
+
+.edit-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  visibility: hidden;
+  width: 100%;
+}
+
+.edit-modal-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  left: 50%;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24rem;
+}
+
+.edit-show-modal {
+  opacity: 1;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  visibility: visible;
+}
+
+#expense-card {
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+  margin-left: 25%;
+  margin-right: 25%;
+  overflow: auto;
+  padding: 2%;
+  row-gap: 16%;
+}
+.expense-card-details {
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.heading {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.high-light {
+  font-weight: bolder;
+  margin: 10px;
+  padding: 10px;
+}
+
+.info-page {
+  background-color: rgb(153, 227, 243);
+  display: block;
+  height: 100%;
+}
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="number"],
+select {
+  border-radius: 1em;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 8px 0;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+input[type="radio"],
+select {
+  border-radius: 1em;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 8px 0;
+  padding: 12px 20px;
+  width: 10%;
+}
+.logo {
+  padding-right: 5em;
+  width: 30em;
+}
+.login-button {
+  background-color: mediumblue;
+  border-radius: 1em;
+  border: mediumblue;
+  color: white;
+  height: 2em;
+  width: 4.5em;
+}
+.login-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+.login-page {
+  align-items: center;
+  display: flex;
+  gap: 6em;
+  height: 100%;
+  justify-content: center;
+}
+.logout-div {
+  background: wheat;
+  border-radius: 5px;
+  font-weight: 900;
+  padding: 0.5%;
+}
+.logout-flex {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.main {
+  background-color: blueviolet;
+  height: 30%;
+}
+.main-page {
+  display: none;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  visibility: hidden;
+  width: 100%;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  left: 50%;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24rem;
+}
+.password {
+  border-radius: 1em;
+  border: cyan;
+  height: 1.8em;
+  width: 14em;
+}
+
+#previous-wallet,
+#current-wallet {
+  background-color: white;
+  display: block;
+  height: 35%;
+  width: 50%;
+}
+#previous-wallet-label {
+  display: none;
+  font-weight: bold;
+}
+.save-entry > button {
+  background-color: #4caf50;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.save-entry > button:hover {
+  background-color: #45a049;
+}
+.signup {
+  background-color: mediumblue;
+  border-radius: 1em;
+  border: mediumblue;
+  color: white;
+  height: 2em;
+  width: 4.5em;
+}
+.signup-page {
+  display: none;
+}
+.signup-page {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  gap: 1em;
+}
+.show-modal {
+  opacity: 1;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  visibility: visible;
+}
+.summary {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  visibility: hidden;
+  width: 100%;
+}
+
+.summary-close-button {
+  background-color: lightgray;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  float: right;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 1.5rem;
+}
+
+.summary-close-button:hover {
+  background-color: darkgray;
+}
+.summary-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  height: fit-content;
+  left: 50%;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24rem;
+}
+
+.summary-show-modal {
+  opacity: 1;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  visibility: visible;
+}
+.total-expense {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.trigger,
+.wallet-trigger,
+.month-summary {
+  border-radius: 5%;
+  border: none;
+  color: blueviolet;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+  height: 3rem;
+  outline: none;
+  width: 10rem;
+}
+.user-input {
+  border-radius: 1em;
+  border: cyan;
+  height: 1.8em;
+  text-align: center;
+  width: 15.2em;
+}
+.username {
+  border-radius: 1em;
+  border: cyan;
+  height: 1.8em;
+  width: 15.2em;
+}
+.wallet {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  visibility: hidden;
+  width: 100%;
+}
+.wallet-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.wallet-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  left: 50%;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24rem;
+}
+.wallet-container {
+  background-color: wheat;
+  height: 70%;
+}
+.wallet-close-button {
+  background-color: lightgray;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  float: right;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 1.5rem;
+}
+
+.wallet-close-button:hover {
+  background-color: darkgray;
+}
+
+.wallet-show-modal {
+  opacity: 1;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  visibility: visible;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
